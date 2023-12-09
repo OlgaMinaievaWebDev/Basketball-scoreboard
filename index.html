@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
- <title>Basketball Scoreboard 🏀</title>
-</head>
-<body>
- <div class="container">
-            <div>
-                <h3>HOME</h3>
-                
-                <div class="display" id="home">0</div>
-                <div class="add-score">
-                 <div class="one" id="home-score1">+1</div>
-                 <div class="two" id="home-score2">+2</div>
-                 <div class="three" id="home-score3">+3</div>
-                </div>
-            </div>
-            <div>
-                <h3>GUEST</h3>
-                <div class="display" id="guest">0</div>
-                <div class="add-score">
-                 <div class="one" id="guest-score1">+1</div>
-                 <div class="two" id="guest-score2">+2</div>
-                 <div class="three" id="guest-score3">+3</div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Basketball Scoreboard 🏀</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+
+        <div class="display" id="home">0</div>
+        <div class="add-score">
+          <div class="one" id="home-score1" onclick="addOne()">+1</div>
+          <div class="two" id="home-score2" onclick="addTwo()">+2</div>
+          <div class="three" id="home-score3" onclick="addThree()">+3</div>
         </div>
-</body>
+      </div>
+      <div>
+        <h3>GUEST</h3>
+        <div class="display" id="guest">0</div>
+        <div class="add-score">
+          <div class="one" id="guest-score1" onclick="addOneGuest()">+1</div>
+          <div class="two" id="guest-score2" onclick="addTwoGuest()">+2</div>
+          <div class="three" id="guest-score3" onclick="addThreeGuest()">
+            +3
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
